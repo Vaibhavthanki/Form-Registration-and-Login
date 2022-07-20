@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registered Data</title>
+</head>
+<body onload="addregisterdata()">
+    <div class="container">
+        <form action="#" id="form1" style="display: none;">
+            <input type="hidden" name="index">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Full name" id="username" oninput="inputfield(this)" onblur="return fullname()">
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-user"></span>
+                </div>
+              </div>
+            </div>
+            <span id="forname" class="redtext"></span>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Email" id="useremail" onblur="return email()">
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-envelope"></span>
+                </div>
+              </div>
+            </div>
+            <span id="foremail" class="redtext"></span>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" placeholder="Password" id="userpassword" onblur="return password()">
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-lock"></span>
+                </div>
+              </div>
+            </div>
+            <span id="forpassword" class="redtext"></span>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" placeholder="Retype password" id="repeatpassword" onblur="return confirmpassword()">
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-lock"></span>
+                </div>
+              </div>
+            </div>
+            <span id="forrepeatpassword" class="redtext"></span>
+            <div class="row">
+              <div class="col-4">   
+                <button type="submit" class="btn btn-primary btn-block" onclick="updatedata()">Update</button>
+              </div>
+            </div>
+          </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Useremail</th>
+                    <th>Userpassword</th>
+                    <th colspan="2">Action</th>
+                </tr>
+            </thead>
+            <tbody id="addrows">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/78b41f4788.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/commenfunction.js"></script>
+    <script src="js/registration.js"></script>
+</body>
+</html>

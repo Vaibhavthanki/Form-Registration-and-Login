@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login Details</title>
+</head>
+
+<body onload="userdetails()">
+    <div class="container">
+        <div class="row justify-content-between">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Useremail</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="removerow">
+                        <td id="userid"></td>
+                        <td id="userpassword"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="d-flex align-items-center">
+                <form action="#">
+                    <input type="button" value="Logout" class="btn-primary" id="logoutbtn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/logindetails.js"></script>
+</body>
+
+</html>

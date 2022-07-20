@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Page</title>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="css/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/adminlte.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="hold-transition register-page">
+<div class="register-box">
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <a href="#" class="h1"><b>Registration</b>Page</a>
+    </div>
+    <div class="card-body">
+      <p class="login-box-msg">Register a new membership</p>
+      <form action="#" id="form" onsubmit="submitform(event)">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Full name" id="username" oninput="inputfield(this)" onblur="return fullname()">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <span id="forname" class="redtext"></span>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email" id="useremail" onblur="return email()">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <span id="foremail" class="redtext"></span>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Password" id="userpassword" onblur="return password()">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <span id="forpassword" class="redtext"></span>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Retype password" id="repeatpassword" onblur="return confirmpassword()">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <span id="forrepeatpassword" class="redtext"></span>
+        <div class="row">
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </div>
+        </div>
+      </form>
+      <a href="login.html" class="text-center">I already have a membership</a>
+    </div>
+    <!-- /.form-box -->
+  </div>
+</div>
+<!-- /.register-box -->
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- for font-awsome -->
+<script src="https://kit.fontawesome.com/78b41f4788.js" crossorigin="anonymous"></script>
+<!-- script-js -->
+<script src="js/commenfunction.js"></script>
+<script src="js/registration.js"></script>
+<!-- <script src="js/main.js"></script> -->
+</body>
+</html>

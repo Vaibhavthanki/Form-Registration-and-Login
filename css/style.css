@@ -1,0 +1,22 @@
+.redtext{
+    color: red;
+}
+.register-box span{
+    display: table;
+    margin-bottom: 0.75rem;
+}
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table td,th{
+    padding: 10px;
+    text-align: center;
+}
+table{
+    margin-top: 1rem;
+}
+input[name="search"]{
+    margin-top: 1rem;
+}
+
